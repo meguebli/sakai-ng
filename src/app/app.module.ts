@@ -1,3 +1,6 @@
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+
 import { NgModule } from '@angular/core';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AppComponent } from './app.component';
@@ -11,14 +14,19 @@ import { EventService } from './demo/service/event.service';
 import { IconService } from './demo/service/icon.service';
 import { NodeService } from './demo/service/node.service';
 import { PhotoService } from './demo/service/photo.service';
+import { StoreModule } from '@ngrx/store';
+import { MyCounterComponent } from './my-counter/my-counter.component';
 
 @NgModule({
     declarations: [
-        AppComponent, NotfoundComponent
+        AppComponent, NotfoundComponent, MyCounterComponent
     ],
     imports: [
         AppRoutingModule,
-        AppLayoutModule
+        AppLayoutModule,
+        CommonModule,
+        HttpClientModule,
+        StoreModule.forRoot({}, {})
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },

@@ -13,6 +13,12 @@ export class CustomerService {
             .then(res => res.data as Customer[])
             .then(data => data);
     }
+    getCustomers() {
+        return this.http.get<any>('assets/demo/data/customers-small.json')
+            .toPromise()
+            .then(res => res.data as Customer[])
+            .then(data => data);
+    }
 
     getCustomersMedium() {
         return this.http.get<any>('assets/demo/data/customers-medium.json')
