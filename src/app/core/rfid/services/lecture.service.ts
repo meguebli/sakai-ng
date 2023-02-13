@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class LectureService {
-  Base_API_URL = 'http://localhost:3000/api/lecture/all/200';
+  Base_API_URL = 'http://localhost:4000/api/lecture/all/200';
   constructor(private _http:HttpClient) { }
   getAllLectures():Observable<Lecture[]> {
     return this._http.get<Lecture[]>(this.Base_API_URL);

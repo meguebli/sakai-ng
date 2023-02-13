@@ -1,0 +1,31 @@
+export interface RdmtDto {
+    IDTicket: number;
+    IDOFabrication: number;
+    IDLancement: number;
+    IDDetLct: number;
+    IDOperation: number;
+    NumMatelas: number;
+    LibTicket: string;
+    IDDetLctTaille: number;
+    Lu: boolean;
+    Temps: number;
+    IDPosteCle: number;
+    LibTaille: string;
+    NumLct: number;
+    OFAbrication: string;
+    Operation: string;
+    Quantite: number;
+    IdTaille: number;
+    Couleur: string;
+    Reste: number;
+    Ordre: number;
+    IDArticle: number;
+    NumTicket: number;
+    PcFrom: number;
+    PcTo: number;
+    IDPacket: number;
+    DateCreation: Date;
+    IdPhase: number;
+    LibPacket: string;
+    IDMatela: number;
+}

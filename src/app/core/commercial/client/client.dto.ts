@@ -1,0 +1,44 @@
+export interface ClientDto {
+    IDClient: number;
+    Client: string;
+    Adresse: string;
+    Code: string;
+    Nationalite: string;
+    Email: string;
+    Tel: string;
+    Fax: string;
+    Couleur: number;
+    Exonere: boolean;
+    Timbre: boolean;
+    CodeDouane: string;
+    AdresseLivraison: string;
+    IdCategorieClient: number;
+    Chiffre: number;
+    Reglements: number;
+    Solde: number;
+    MF: string;
+    IDModeReglement: number;
+    IDConditionReglement: number;
+    IDClientFamille: number;
+    IdParent: number;
+    Reference: string;
+    NomClient: string;
+    NumInterne: number;
+    ModifieLe: Date;
+    SemiFiniParDefaut: boolean;
+    ExonerationTVA: boolean;
+    ExonerationFODEC: boolean;
+    IDTauxRetenuSource: number;
+    IDAvanceTVA: number;
+    Avance: number;
+    Difference: number;
+    IDCommercial: number;
+    Ristourne: number;
+    Remise: number;
+    Rabais: number;
+    Transporteur: string;
+    InfoTransport: string;
+    RemiseClient: number;
+    Etat: boolean;
+
+}

@@ -1,0 +1,30 @@
+export interface ArticleDto {
+    IDArticle: number;
+    Code: string;
+    Article: string;
+    IDAr_Couleur: number;
+    IDArFamille: number;
+    Etat: boolean;
+    IDGamme: number;
+    IDClient: number;
+    TempsClient: number;
+    Prix: number;
+    TauxTVA: number;
+    Image: Buffer;
+    IdProcess: number;
+    prixMP: number;
+    CodeDouane: string;
+    Composition: string;
+    Valeur: number;
+    PrixFac: number;
+    Cadence: number;
+    SemiFini: number;
+    PoidsBrut: number;
+    PoidsNet: number;
+    ValeurTissu: number;
+    ValeurFourniture: number;
+    ValeurMP: number;
+    TypeTarif: boolean;
+    IDGrille: number;
+    Reference: string;
+}
