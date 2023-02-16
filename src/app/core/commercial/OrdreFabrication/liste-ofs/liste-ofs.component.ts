@@ -2,7 +2,7 @@ import { OfabricationService } from './../ofabrication.service';
 import { OfabricationDto } from './../ofabrication.dto';
 import { Component } from '@angular/core';
 import { LazyLoadEvent } from 'primeng/api';
-
+import {FilterService} from 'primeng/api';
 @Component({
   selector: 'app-liste-ofs',
   templateUrl: './liste-ofs.component.html',
@@ -13,11 +13,20 @@ export class ListeOfsComponent {
     first: number = 0;
     cols!: any[];
 
-    constructor(private OfabricationService: OfabricationService) { }
+    constructor(private OfabricationService: OfabricationService,private filterService: FilterService) { }
 
     ngOnInit() {
-        this.OfabricationService.getAllOF().subscribe(data => this.ofs = data);
-
+        // const value = 'PrimeNG';
+        // this.OfabricationService.getAllOF().subscribe(data => this.ofs = data);
+        // this.filterService.filters.equals(value, 'NG');                            //false
+        // this.filterService.filters.equals(value, 8);                               //false
+        // this.filterService.filters.equals(value, new Date());                      //false
+        // this.filterService.filters.contains(value, 'NG');                          //true
+        // this.filterService.filters.startsWith(value, 'NG');                        //false
+        // this.filterService.filters.endsWith(value, 'NG');                          //true
+        // this.filterService.filters.lt(10, 20);                                     //true
+        // this.filterService.filters.gt(50, 20);                                     //true
+        // this.filterService.filters.in(value, ['PrimeFaces', 'PrimeNG']);           //true
         this.cols = [
             { field: 'IDOFabrication', header: 'IDOFabrication' },
             { field: 'OFAbrication', header: 'OFAbrication' },

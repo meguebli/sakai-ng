@@ -1,0 +1,12 @@
+{
+    "demo": {
+      "greetings": "Bonjour!",
+      "en": "Anglaise",
+      "fr": "Français"
+    },
+    "Auth": {
+      "msg": "Bienvenue, DIVA SOFTWARE!!",
+      "en": "Anglaise",
+      "fr": "Français"
+    }
+  }

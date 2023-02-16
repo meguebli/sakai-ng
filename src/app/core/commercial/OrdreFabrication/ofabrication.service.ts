@@ -12,4 +12,25 @@ export class OfabricationService {
   getAllOF():Observable<OfabricationDto[]>{
     return this._http.get<OfabricationDto[]>(this.BaseAPI)
   }
-}
+
+      getofs=(lazyEvent:any|null) =>{
+        return fetch('/api/customers', {
+          method: 'POST',
+          body: lazyEvent,
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })
+        .then(response => response.json())
+        .then(data => {
+          return {
+            ofs: data.ofs,
+            totalRecords: data.totalRecords
+          };
+        });
+      }
+
+
+
+  }
+

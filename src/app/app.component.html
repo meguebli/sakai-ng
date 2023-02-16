@@ -1,1 +1,24 @@
+
+<div class="p-d-flex p-ai-center p-jc-between p-mt-3">
+
+	<div class="p-d-flex p-col-6 p-jc-end" style="float: right;">
+
+
+            <input type="radio" (ngModelChange)="changeLang($event)" name="language" value="en" [(ngModel)]="lang" id="en">
+            <label class="p-ml-1" for="en">
+              <img src="../assets/i18n/eng.png" alt="English"  [ngClass]="getFlagClass(lang)" alt="United States">
+            </label>
+
+
+            <input type="radio" (ngModelChange)="changeLang($event)" name="language" value="fr" [(ngModel)]="lang" id="fr">
+            <label class="p-ml-1" for="fr">
+              <img src="../assets/i18n/fr.png" alt="Français"  [ngClass]="getFlagClass(lang)" alt="Français">
+            </label>
+
+
+
+
+
+	</div>
+</div>
 <router-outlet></router-outlet>
